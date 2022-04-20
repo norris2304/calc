@@ -1,0 +1,29 @@
+while True:
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            break
+        except ValueError:
+            print("Sorry, that is not an integer. Please try again.")
+
+    op = input("Enter operator: ")
+    
+    while True:
+        try:
+            num2 = float(input("Enter second number: "))
+            break
+        except ValueError:
+            print("Sorry, that is not an integer. Please try again.")
+    
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "/":
+        print(num1 / num2)
+    elif op == "*":
+        print(num1 * num2)
+    
+    next_calc = input("Another? ")
+    if next_calc == "no":
+        break
